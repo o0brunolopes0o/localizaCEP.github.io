@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <!--INÍCIO DO FORM-->
+
+    <h1>CONSULTA CEP COM API <br /><br /> ViaCEP</h1>
+    <form method="get" action=".">
+        <label>CEP:
+            <input name="cep" type="text" id="cep" value="" size="10" maxlength="9" onblur="pesquisaCep(this.value);"></label><br><br>
+            
+            <label>Rua:
+                <input name="rua" type="text" id="rua" size="60">
+            </label><br><br>
+            
+            <label>Bairro:
+                <input name="bairro" type="text" id="bairro" size="40">    
+            </label><br><br>
+            
+            <label>Cidade:
+                <input name="cidade" type="text" id="cidade" size="40"><br><br>
+                
+                <label>Estado:
+                    <input name="uf" type="text" id="uf" size="2"><br><br>
+                </label>
+                
+                <label>IBGE:
+                    <input name="ibge" type="text" id="ibge" size="8">
+                </label><br><br>
+
+                <button onclick="limpaFormularioCep()" class="button">Limpa</button>
+            </form>
+            <!--FIM DO FORM-->
+
+            <script src="./script.js"></script>
+    </div>
+</body>
+</html>
